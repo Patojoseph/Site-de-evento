@@ -1,0 +1,86 @@
+<!--To do list
+1- Fazer com que seja mostrado eventos que aconteçam aqui no brasil e não o nome do estado
+2- Colocar a tabel menor e fazer ela ficar mais bonitinha
+3-Add um footer maneiro só com coisas básicsa mesmo como telefone de contado e redes sociais
+4-mandar isso hoje para o professor
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andromeda Events</title>
+    <link rel="stylesheet" href="nclient.css">
+  </head>
+  <body>
+    <div id="title">
+      <h1>Novo Cliente</h1>
+    </div>
+    <nav>
+      <div id="link_c_eventos">
+        <a href="../clientpaht/clin.html" id="a_link_c_eventos">
+          <span>Lançar Cliente</span>
+        </a>
+      </div>
+      <div id="link_c_clientes">
+        <a href="../eventpaht/event.html" id="a_link_c_clientes" >
+          <span>Cadastrar Eventos</span>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div id="principal">
+        <div id="add_clientes">
+          <div id="inputs">
+            <select id="Nome_do_cliente" class="inputs">
+              <option value="0">Nome do usuario</option>
+              <option value="1">Perereco</option>
+              <option value="2">João Vitor Taveira</option>
+              <option value="3">Matheus </option>
+              <option value="4">Alicia Silva Pereira</option>
+              <option value="5">José Francisco Silva Pereira</option>
+            </select>
+            <select name="Local" id="Local" class="inputs">
+              <option value="0">Local</option>
+              <option value="1">Tocantins</option>
+              <option value="2">Bahia</option>
+              <option value="3">São Paulo</option>
+              <option value="4">Salvador</option>
+              <option value="5">Rio de Janeiro</option>
+            </select>
+            <input type="time" id="Hora" class="inputs" placeholder="8pm">
+            <input type="date" id="Data" class="inputs" placeholder="20/08/1990">
+            <input type="submit" id="Enviar" class="inputs" placeholder="Enviar">
+          </div>
+        </div>
+        <div id="m_clientes">
+          <div id="Table">
+            <table border="1">
+              <caption>Clientes</caption>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Local</th>
+                  <th>Hora</th>
+                  <th>Data</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="tr">
+                  <td id="td_nome"></td>
+                  <td id="td_local"></td>
+                  <td id="td_hora"></td>
+                  <td id="td_data"></td>
+                  <td id="td_estado"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body> 
+  <script src="clin.js"></script>
+</html>
