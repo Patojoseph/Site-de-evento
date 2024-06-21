@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andromeda Events</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon"  type="imagex/png" href="imagens/Andromeda logo.svg">
+</head>
+<body>
+  <main>
+    <!--Logo-->
+    <!--Aqui só falta os estilos mas de resto ta tudo certo-->
+    <!--Tentar fazer um background mais animado, mas com as cores do tema descrito-->
+    <!--Parte com as caixas de texto e etc, tudo pra fazer o login-->
+    <div class="background_line">
+      <div class="stars"></div>
+      <div class="stars_1"></div>
+      <form action="index.html" method="post" id="form" target="_self" autocomplete="off">
+        <div class="log-in">
+          <h1>Log-in</h1>
+            <div class="email_label">
+              <label for="e-mail">
+                <input type="email" id="Dev_E-mail" placeholder="Email corporativo" required>
+                <p id="span_email"></p>
+              </label>
+            </div>
+            <div class="password_label">
+              <label for="password">
+                <input type="password" id="Dev_Password" placeholder="Sua senha" required>
+                <p id="span_password"></p>
+              </label>
+            </div>
+            <div class="log">
+              <input type="radio" id="m_log">
+              <span>Manter logado</span>
+            </div>
+            <button type="submit" id="submit_B">Enviar</button>
+            <div class="help">
+              <a href="help/help.html" target="_blank">
+                <p>Esqueceu sua senha</p>
+              </a>
+              <a href="help/help.html" target="_blank">
+                <p>Problemas para logar</p>
+              </a>
+            </div>
+        </div>
+      </form>
+      <!--Ajustar a parte pra envio para as proximas páginas-->
+      <footer>
+        <div class="Terms">
+          <a href="">
+            <p id="P_terms">Termos e condições</p>
+          </a>
+          <a href="">
+            <p id="P_sobre-nos">Sobre nós</p>
+          </a>
+        </div>  
+      </footer>
+    </div>
+  </main>
+</body>
+<script src="index.js"></script>
+</html>
