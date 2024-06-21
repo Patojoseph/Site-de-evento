@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+.Email {
+  border-radius: 10%;
+  width: 60%;
+  margin-bottom: 1%;
+  margin-left: 20% ;
+  margin-right: 20%;
+  position: absolute;
+  background-color: #ece4f7;
+  justify-content: center;
+  display: none;
+}
+
+.descripitionEmail {
+  margin-left: 25%;
+  margin-top: -5%;
+}
+
+#titleEmail{
+  margin-left: 40%;
+  font-family: Abel;
+  font-size: 24px;
+}
+
+#name {
+  width: 30%;
+  height: 3%;
+  margin-left: 35%;
+  margin-top: -1%;
+}
+
+#descripitionP{
+  margin-left: 35%;
+}
+
+#Capcha_Email{
+  margin-left: 37%;
+  margin-right: 3%;
+}
+
+#email_reload_cap{
+  position: relative;
+  top: -22px;
+  border-radius: 10px;
+  border: solid 1px #b7b1c0;
+  background-color: #e4e8fa
+}
+
+#Email-input {
+  margin-left: 34%;
+  width: 30%;
+  height: 5%;
+  margin-right: 40%;
+}
+
+#B_Rep_Email{
+  margin-left: 43%;
+  margin-top: 2%;
+  padding: 1% 5% 1% 5%;
+  background-color: #bda2eeee;
+  border-radius: 7px;
+  color: #552aa5ee;
+  border: solid 4px #552aa5ee;
+}
+
+#B_Rep_Email:hover{
+  background-color:#552aa5ee ;
+  transform: translateY(-7px);
+  transition-duration: 0.3s;
+  color: #ffffff;
+}
+
+
+
+/*Volto logo fui comer*/
