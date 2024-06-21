@@ -1,3 +1,101 @@
-.navegator {
-  border: 2px solid blue;
-};
+/*Organizar o media dps, fazer todos os estilos primeiro*/
+
+#title{
+  margin-top: -5%;
+  width: 100%;
+  background-color: #1e1940e6;
+}
+
+h1 {
+  color: #ffffff;
+  margin-left: 25%;
+  margin-left: 25%;
+  font-size: 6.25rem;
+  width: 50%;
+  text-align: center;
+  overflow: visible;
+  /*@media (max-width: 70rem){
+    margin-left: 27rem;
+  }*/
+}
+
+nav{
+  margin-top: -5%;
+  margin-bottom: 1.5%;
+  width: 100%;
+  height: 2%;
+  background-color: #00000033;
+  display: flex;
+}
+
+#link_c_eventos, #link_c_clientes{
+  width: 20%;
+  height: 2%;
+  margin-top: 1%;
+  margin-left: 25%;
+  margin-bottom: 1%;
+  background-image: linear-gradient(to right, #382e72, #25213efc) ;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+#link_c_clientes{
+  margin-left: 10%;
+}
+
+#a_link_c_eventos, #a_link_c_clientes {
+  padding-right: 2%;
+  padding-left: 5%;
+  padding-top: 1%;
+  font-size: 2rem;
+  color: #ffffff;
+  text-decoration: none;
+  transition: ease-in-out 0.5s;
+  border-radius: 0.5rem;
+}
+
+#a_link_c_eventos:hover, #a_link_c_clientes:hover{
+  text-decoration: underline;
+}
+
+#add_clientes{
+  border: none;
+  margin-top: 1%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1.5%;
+  width: 80%;
+}
+
+input, select{
+  margin-left: 7%;
+  padding: 0.5%;
+  border: solid 4px #382e72;
+  border-radius: 0.5rem;
+}
+
+input:focus{
+  border: solid 4px #25213e;
+}
+
+#Nome_d_Cliente{
+  margin-left: 0;
+}
+
+
+#m_clientes{
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 1%;
+}
+
+#Table{
+  padding-bottom: 15%;
+}
+
+table{
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: solid 2px blue;
+}

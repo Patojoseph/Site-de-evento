@@ -1,64 +1,86 @@
-<!-- To do list
-1- Fazer todo o Css com urgência
-2- Fazer os links interativos
-3- Fazer com que você possa add uma pessoa na hora
-4*- Fazer um banco de dados para poder fazer ficar bonito.
-5- Abrender a usar o git-hub
+<!--To do list
+1- Fazer com que seja mostrado eventos que aconteçam aqui no brasil e não o nome do estado
+2- Colocar a tabel menor e fazer ela ficar mais bonitinha
+3-Add um footer maneiro só com coisas básicsa mesmo como telefone de contado e redes sociais
+4-mandar isso hoje para o professor
 -->
 
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andromeda events</title>
-  <script src="clin.js"></script>
-  <link rel="stylesheet" href="clin.css">
-</head>
-<body>
-  <!--Navegador do site-->
-  <nav class="navegator">
-    <h1>Horários dos clientes</h1>
-    <a href="../eventpaht/event.html" rel="noopener noreferrer">
-      <span class="New event">Eventos</span>
-    </a>
-    <a href="../c_cliente/nclient.html" rel="noopener noreferrer">
-      <span class="New client">Novo Cliente</span>
-    </a>
-  </nav>
-    <!--Parte do conteudo, colocar uma tabela com os clientes horarios
-    dia e estato-->
-  <main>
-    <!--Tabela (fazer ela poder ser alterada dps)-->
-    <p>dkjsglah</p>
-    <table border="2">
-      <!--Cabeça da tabela-->
-      <thead class="tablehead">
-        <tr>
-          <th>Cliente</th>
-          <th>Horários</th>
-          <th>Dia</th>
-          <th>Estao</th>
-        </tr>
-      </thead>
-      <!--Corpo da tabela-->
-      <tbody>
-        <!--Tentar alterar essa parte no js.-->
-        <div class="table alterence">
-          <tr class="linha 1">
-            <th class="coluna 1">
-            
-            </th>
-          </tr>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andromeda Events</title>
+    <link rel="stylesheet" href="clin.css">
+  </head>
+  <body>
+    <div id="title">
+      <h1>Novos Clientes</h1>
+    </div>
+    <nav>
+      <div id="link_c_eventos">
+        <a href="../eventpaht/event.html" id="a_link_c_eventos">
+          <span>Cadastrar Eventos</span>
+        </a>
+      </div>
+      <div id="link_c_clientes">
+        <a href="../c_cliente/nclient.html" id="a_link_c_clientes" >
+          <span>Cadastrar Clientes</span>
+        </a>
+      </div>
+    </nav>
+    <main>
+      <div id="principal">
+        <div id="add_clientes">
+          <div id="inputs">
+            <select id="Nome_do_cliente" class="inputs">
+              <option value="0">Nome do usuario</option>
+              <option value="1">Perereco</option>
+              <option value="2">João Vitor Taveira</option>
+              <option value="3">Matheus </option>
+              <option value="4">Alicia Silva Pereira</option>
+              <option value="5">José Francisco Silva Pereira</option>
+            </select>
+            <select name="Local" id="Local" class="inputs">
+              <option value="0">Local</option>
+              <option value="1">Tocantins</option>
+              <option value="2">Bahia</option>
+              <option value="3">São Paulo</option>
+              <option value="4">Salvador</option>
+              <option value="5">Rio de Janeiro</option>
+            </select>
+            <input type="time" id="Hora" class="inputs" placeholder="8pm">
+            <input type="date" id="Data" class="inputs" placeholder="20/08/1990">
+            <input type="submit" id="Enviar" class="inputs" placeholder="Enviar">
+          </div>
         </div>
-      </tbody>
-    </table>
-    <p>a sla mano só funciona</p>
-    <input type="text" id="nome" placeholder="nome">
-  </main>
-  <footer>
-    <span>Trabalhe vagabundo</span>
-  </footer>
-</body>
+        <div id="m_clientes">
+          <div id="Table">
+            <table border="1">
+              <caption>Clientes</caption>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>Local</th>
+                  <th>Hora</th>
+                  <th>Data</th>
+                  <th>Estado</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr id="tr">
+                  <td id="td_nome"></td>
+                  <td id="td_local"></td>
+                  <td id="td_hora"></td>
+                  <td id="td_data"></td>
+                  <td id="td_estado"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body> 
+  <script src="clin.js"></script>
 </html>

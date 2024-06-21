@@ -1,28 +1,75 @@
+<!--To do list
+1-Fazer o menu ser duplo
+2-Fazer o ele conseguir recuperar a senha
+3-Css chave.
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Help</title>
+  <link rel="stylesheet" href="help.css">
+  <link rel="stylesheet" href="helpE.css">
 </head>
 <body>
+  <!--Parte do email-->
   <div class="Senha">
-    <h3>Recuperar Senha</h3>
+    <h3 id="titulo">Recuperar Senha</h3>
     <div class="Senha_part">
       <fieldset>
-        <label for="cp">
-            <p>Resolva o Capcha para continuar</p>
-            <img src="" alt="capcha">
-            <input type="text">
-        </label>
+        <div class="content">
+          <div id="descripition">
+            <p>Para poder recuperar a sua senha, digite o seu email</p>
+          </div>
+          <label for="email" id="email">
+            <input type="email" id="dev_email" placeholder="Digite o seu email" autocomplete="off">
+          </label>
+          <label for="cp" id="cp  ">
+              <p id="p_descri">Resolva o Capcha para continuar</p>
+              <div class="imgs"> 
+                <img src="../imagens/Cap 01.svg" id="Capcha_Senha" alt="capcha">
+                <button id="reload">
+                  <img src="../imagens/reload capcha.svg" id="reload_B" alt="Botão de reload"> 
+                </button>
+              </div>
+              <label for="Capcha">
+                <br>
+                <input type="text" id="Cap" autocomplete="off">
+              </label>
+          </label>
+          <button  id="B_email">Enviar</button>
+        </div>
+        <div class="transion_Senha">
+          <h3 id="textclick">Esqueceu seu email</h3>
+          <button id="clieque_aqui">Clique aqui</button>
+        </div>
       </fieldset>
     </div>
   </div>
+  <!--Emailparte-->
   <div class="Email">
-    <h3>Recuperar Email</h3>
+    <h3 id="titleEmail">Recuperar Email</h3>
     <div class="Email_part">
-
+      <fieldset>
+        <label for="name">
+          <div class="descripitionEmail">
+            <p>Digite o seu nome para poder resgatar o seu email</p>
+          </div>
+          <input type="text" id="name" placeholder="Joseph" autocomplete="off">
+        </label>
+        <label for="Capcha_Email">
+          <p id="descripitionP">Resolva o Capcha para continuar</p>
+          <img src="../imagens/Cap 02.svg" id="Capcha_Email" alt="Capcha">
+          <button id="email_reload_cap">
+            <img src="../imagens/reload capcha.svg" id="reload_Be" alt="Reload Cap">
+          </button>
+          <input type="text" id="Email-input" autocomplete="off">
+        </label>
+        <button id="B_Rep_Email">Enviar</button>
+      </fieldset>
     </div>
   </div>
 </body>
+<script src="help.js"></script>
 </html>

@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* p, input {
+  font-family: Manrope;
+}
+
+#Capcha_Senha, #Capcha_Email{
+  width: 27% ;
+  height: 27%;
+}
+
+#reload_B, #reload_Be {
+  width: 80%;
+  height: 80%;
+  margin: 2%;
+}
+#reload, #email_reload_cap {
+  width: 9%;
+  height: 9%;
+}
+
+#reload {
+  position: relative;
+  top: -25px;
+  background-color: #e4e8fa;
+  border-radius: 10px;
+  border: solid 1px #b7b1c0;
+}
+
+fieldset {
+  text-decoration: none;
+  border: none;
+}
+
+.Senha {
+  border-radius: 10%;
+  width: 60%;
+  margin-top: 1% ;
+  margin-bottom: 1%;
+  margin-left: 20% ;
+  margin-right: 20%;
+  position: absolute;
+  background-color: #ece4f7;
+  justify-content: center;
+}
+
+.Senha h3 {
+  text-align: center;
+  font-family: Abel;
+  font-size: 24px;
+}
+
+#titulo {
+  margin-bottom: -2%;
+}
+
+.imgs img {
+  padding: 5%;
+  margin-left: 17%;
+  margin-top: -5%;
+  margin-bottom: -4%;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 100%;
+  margin-left : -10%;
+  margin-right: -10%;
+  padding-left: 25%;
+}
+
+#B_email, input {
+  margin-top: 3%;
+  margin-right: 25%;
+}
+
+#B_email {
+  margin-left: 30%;
+  padding: 1% 5% 1% 5%;
+  background-color: #bda2eeee;
+  border-radius: 7px;
+  color: #552aa5ee;
+  border: solid 4px #552aa5ee;
+}
+
+#B_email:hover{
+  background-color:#552aa5ee ;
+  transform: translateY(-7px);
+  transition-duration: 0.3s;
+  color: #ffffff;
+}
+
+#cp {
+  margin-left: 30%;
+}
+
+#Cap {
+  margin-left: 23%;
+  width: 27%;
+  height: 5%;
+  margin-top: -15%;
+}
+
+#dev_email{
+  margin-left: 15%;
+  width: 50%;
+  height: 5%;
+}
+
+#email {
+  width: 90%;
+  margin-top: -1;
+}
+
+#descripition {
+  margin-left: 10%;
+  margin-bottom: -3%;
+  margin-top: 1%;
+}
+
+input {
+  border-radius: 7px;
+  border: solid 4px #b7b1c0;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+input:focus{
+  border: solid 4px #552aa5ee ;
+  outline: 0;
+}
+
+#p_descri {
+  margin-left: 19%;
+  margin-top: 3%;
+}
+
+.transion_Senha {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100%;
+  flex-wrap: wrap;
+}
+
+.transion_Senha h3 {
+  flex-grow:  1;
+}
+
+
+body{
+  display: flex;
+  position: relative;
+}
+
+#clieque_aqui {
+  padding: 1% 4% 1% 4%;
+  margin-left: 2%;
+  border-radius: 7px;
+  border: solid 4px #552aa5ee;
+  background-color: #bda2eeee;
+  color: #552aa5ee;
+  margin-top: -1%;
+
+}
+
+#clieque_aqui:hover {
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transform: translateY(-7px);
+  background-color: #552aa5ee;
+  color: #ffffff;
+}
