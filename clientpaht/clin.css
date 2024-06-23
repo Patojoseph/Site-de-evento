@@ -99,3 +99,7 @@ table{
   margin-right: 5%;
   border: solid 2px blue;
 }
+
+.struture{
+  display: none;
+}
